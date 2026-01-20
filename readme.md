@@ -31,11 +31,9 @@ This project predicts accident severity based on driver, vehicle, road, and envi
 ```
 accident-severity-prediction/
 │
-├── dataset/
-│   └── RTA_dataset.csv
+├── RTA_dataset.csv
 │
-├── notebooks/
-│   └── Accident_Severity_Prediction.ipynb
+├── Accident_Severity_Prediction.ipynb
 │
 ├── trained_models/
 │   ├── rta_model.joblib
