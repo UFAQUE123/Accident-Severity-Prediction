@@ -13,7 +13,9 @@ st.set_page_config(
 # load the encoder and model
 models = {
     "Random Forest Classifier": joblib.load("trained_models/rta_model.joblib"),
-    "Tuned RF": joblib.load("trained_models/rta_tuned_rf.joblib")
+    "Tuned RF": joblib.load("trained_models/rta_tuned_rf.joblib"),
+    "Tuned KNN": joblib.load("trained_models/rta_tuned_knn.joblib"),
+    "Tuned DT": joblib.load("trained_models/rta_tuned_dt.joblib")
 }
          
 encoder = joblib.load("trained_models/ordinal_encoder.joblib")
@@ -51,7 +53,8 @@ st.markdown(
 )
 
 st.divider()
-model_choice = st.selectbox("Select Model", ["Random Forest Classifier", "Tuned RF"])
+model_choice = st.selectbox("Select Model", ["Random Forest Classifier", "Tuned RF",
+                                             "Tuned KNN", "Tuned DT"])
 model = models[model_choice]
 
 def main():
