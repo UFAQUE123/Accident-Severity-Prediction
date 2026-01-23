@@ -104,7 +104,7 @@ Contains road traffic accident records including:
 - Tuned: Random Forest + Pipeline + GridSearchCV
 
 ### Best Performance
-- **Weighted F1-score ≈ 80%**
+- **Weighted F1-score ≈ 77%**
 - Cross-validated and stratified split
 
 ---
